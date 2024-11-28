@@ -17,8 +17,8 @@ const Newsboard = ({category}) => {
 
 
   return (
-    <div>
-      <h2 className='text-center'>Latest <span class="badge text-bg-danger">News</span>
+    <div className=' text-center'>
+      <h2 className='text-center'><span class="badge text-bg-danger">Latest News</span>
       </h2>
       {articles.map((news,index)=>{return <Newsitem key={index} title={news.title} description = {news.description} src = {news.urlToImage} url={news.url}   />})}
     </div>
