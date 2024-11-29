@@ -7,7 +7,7 @@ const Newsitem = ({title,description,src,url}) => {
     <div className="card-body">
     <h5 className="card-title">{title.slice(0,50)}</h5>
     <p className="card-text">{description? description.slice(0,90):"Sorry ,News text not show due to our system failure."}.</p>
-    <a href={url} className="btn btn-primary">Read More</a>
+    <a href={url} target='next' className="btn btn-primary">Read More</a>
   </div>
 </div>
   )
